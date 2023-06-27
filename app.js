@@ -140,7 +140,11 @@ app.post("/delete",function(req,res)
  
 });
 
-app.listen(3000,function()
-{
-    console.log("Listening successfully");
+const PORT = process.env.PORT || 3000;
+
+// your code
+
+app.listen(PORT, () => {
+  console.log(`server started on port ${PORT}`);
 });
+
