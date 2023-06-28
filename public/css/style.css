@@ -115,12 +115,15 @@ html {
 .form-container {
     width: 400px; /* Adjust the width as needed */
     max-height: 400px; /* Adjust the height as needed */
-    overflow-y: hidden;
+    overflow: hidden;
     display: flex;
   flex-direction: column;
   }
 .form-container form {
   flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+    
 }
   
   @keyframes gradient-animation {
