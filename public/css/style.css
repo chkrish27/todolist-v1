@@ -102,6 +102,11 @@ html {
     background-size: 180% 180%;
     animation: gradient-animation 25s ease infinite;
   }
+.form-container {
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    overflow: auto;
+  }
   
   @keyframes gradient-animation {
     0% {
