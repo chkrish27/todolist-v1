@@ -115,8 +115,11 @@ html {
 .form-container {
     width: 400px; /* Adjust the width as needed */
     max-height: 400px; /* Adjust the height as needed */
-    overflow: auto;
+    overflow-y: auto;
   }
+.form-container form {
+  height: 100%;
+}
   
   @keyframes gradient-animation {
     0% {
