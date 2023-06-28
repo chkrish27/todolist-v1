@@ -5,10 +5,16 @@ html {
      animation: gradient-animation 18s ease infinite;
     min-height: 1000px;
     font-family: 'helvetica neue';
-    display: flex;
   }
+.body{
+    display: flex;
+    flex-direction: column;
+     align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+}
  .content {
     flex: 1;
+     text-align: center;
   }
   
   h1 {
@@ -126,7 +132,7 @@ html {
 
 .footer {
     background-color: #f5f5f5;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     font-size: 14px;
     color: #888;
