@@ -114,7 +114,7 @@ html {
   }
 .form-container {
     width: 400px; /* Adjust the width as needed */
-    max-height: 400px; /* Adjust the height as needed */
+    max-height: 100vh; /* Adjust the height as needed */
     overflow: hidden;
     display: flex;
   flex-direction: column;
@@ -125,10 +125,7 @@ html {
   flex-wrap: wrap;
     
 }
-.form-container form button {
-  align-self: flex-end;
-  margin-top: 10px; /* Adjust the margin as needed */
-}
+
   
   @keyframes gradient-animation {
     0% {
