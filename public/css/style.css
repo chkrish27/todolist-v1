@@ -108,22 +108,30 @@
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
-  }
-  
-  .gradient-background {
-    background: linear-gradient(300deg, #8360c3, #2ebf91);
-    background-size: 180% 180%;
-    animation: gradient-animation 25s ease infinite;
-  }
-  
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+    margin-top: 295px;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 295px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Wellfleet', serif;
+}
+
+#scrollToTopBtn:hover {
+  background-color: darkgrey;
+}
+
+
