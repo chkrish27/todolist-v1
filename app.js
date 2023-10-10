@@ -82,28 +82,30 @@ app.get("/:customListName",async(req,res)=>{
   
 });
 
-app.post("/",async(req,res)=>
-{
-    var itemName = req.body.nexttodo;
-    const listName = req.body.list;
+app.post("/", async (req, res) => {
+  var itemName = req.body.nexttodo.trim(); // Remove leading and trailing spaces
+  const listName = req.body.list;
 
-    const item = new Item({
-      Name: itemName
-    });
-    if(listName==="Today")
-    {
-      item.save();
-      res.redirect("/");
-    }
-    else{
-      const foundlist = await List.findOne({Name:listName});
-      foundlist.items.push(item);
-      foundlist.save();
-      res.redirect("/"+listName);
-
-    }
-    
+  // Check if the input is not empty
+  if (itemName !== "") {
+      const item = new Item({
+          Name: itemName
+      });
+      if (listName === "Today") {
+          item.save();
+          res.redirect("/");
+      } else {
+          const foundlist = await List.findOne({ Name: listName });
+          foundlist.items.push(item);
+          foundlist.save();
+          res.redirect("/" + listName);
+      }
+  } else {
+      // Display a client-side alert
+      res.send("<script>alert('Enter a valid note.'); window.location.href='/';</script>");
+  }
 });
+
 
 app.post("/delete",function(req,res)
 {
@@ -139,6 +141,8 @@ app.post("/delete",function(req,res)
 }
  
 });
+
+
 
 const PORT = process.env.PORT || 3000;
 

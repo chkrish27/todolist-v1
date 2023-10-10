@@ -1,15 +1,11 @@
-html {
-    background-color: #E4E9FD;
-    background-image: -webkit-linear-gradient(65deg, #8360c3, #2ebf91 50%, #E4E9FD 50%);
-    background-size: cover;
-     animation: gradient-animation 18s ease infinite;
-    min-height: 1000px;
-    font-family: 'helvetica neue';
+  *{
+    font-family: 'Wellfleet', serif;
   }
   
   h1 {
     color: white;
     padding: 10px;
+    margin-top: 110px;
   }
   
   .box {
@@ -20,8 +16,9 @@ html {
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
   }
   
+  
   #heading {
-    background-color: #d67777;
+    background-color: #FFC107;
     text-align: center;
   }
   
@@ -63,7 +60,7 @@ html {
     width: 50px;
     border-radius: 50%;
     border-color: transparent;
-    background-color: #d67777;
+    background-color: #FFC107;
     color: #fff;
     font-size: 30px;
     padding-bottom: 6px;
@@ -90,27 +87,47 @@ html {
     color: grey;
     opacity: 1;
   }
-  
+
+
   footer {
-    color: white;
-    color: rgba(0, 0, 0, 0.5);
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(9,9,9);
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
-  }
+    margin-top: 295px;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 295px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Wellfleet', serif;
+}
+
+#scrollToTopBtn:hover {
+  background-color: darkgrey;
+}
+
+
+
+
   
-  .gradient-background {
-    background: linear-gradient(300deg, #8360c3, #2ebf91);
-    background-size: 180% 180%;
-    animation: gradient-animation 25s ease infinite;
-  }
+
   
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+ 
